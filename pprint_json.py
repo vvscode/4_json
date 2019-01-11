@@ -13,7 +13,7 @@ def pretty_print_json(string):
     try:
         json_data = json.loads(string)
         print(json.dumps(json_data, sort_keys=True, indent=4))
-    except:
+    except ValueError:
         print(string)
 
 
